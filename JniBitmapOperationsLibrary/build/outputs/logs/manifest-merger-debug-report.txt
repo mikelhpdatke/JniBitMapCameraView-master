@@ -1,0 +1,29 @@
+-- Merging decision tree log ---
+manifest
+ADDED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:1:1-11:12
+INJECTED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:1:1-11:12
+INJECTED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:1:1-11:12
+INJECTED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:1:1-11:12
+INJECTED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:1:1-11:12
+INJECTED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:1:1-11:12
+INJECTED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:1:1-11:12
+	package
+		ADDED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:2:5-53
+		INJECTED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml
+		INJECTED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml
+	android:versionName
+		ADDED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:4:5-30
+		INJECTED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml
+		INJECTED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml
+	xmlns:android
+		ADDED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:1:11-69
+	android:versionCode
+		ADDED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:3:5-28
+		INJECTED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml
+		INJECTED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml
+uses-sdk
+ADDED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:6:5-8:41
+	android:targetSdkVersion
+		ADDED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:8:9-38
+	android:minSdkVersion
+		ADDED from I:\OT\CameraView-master\JniBitmapOperationsLibrary\AndroidManifest.xml:7:9-34

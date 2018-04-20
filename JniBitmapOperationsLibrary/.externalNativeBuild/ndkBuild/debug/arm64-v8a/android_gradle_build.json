@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "I:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\Android.mk",
+    "I:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\luong\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dI:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\Android.mk NDK_APPLICATION_MK\u003dI:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dI:/OT/CameraView-master/JniBitmapOperationsLibrary/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dI:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\build\\intermediates\\ndkBuild\\debug\\lib clean"
+  ],
+  "libraries": {
+    "JniBitmapOperationsLibrary-debug-arm64-v8a": {
+      "buildCommand": "C:\\Users\\luong\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dI:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\Android.mk NDK_APPLICATION_MK\u003dI:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\Application.mk APP_ABI\u003darm64-v8a NDK_ALL_ABIS\u003darm64-v8a NDK_DEBUG\u003d1 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dI:/OT/CameraView-master/JniBitmapOperationsLibrary/build/intermediates/ndkBuild/debug/obj NDK_LIBS_OUT\u003dI:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\build\\intermediates\\ndkBuild\\debug\\lib I:/OT/CameraView-master/JniBitmapOperationsLibrary/build/intermediates/ndkBuild/debug/obj/local/arm64-v8a/libJniBitmapOperationsLibrary.so",
+      "toolchain": "toolchain-arm64-v8a",
+      "abi": "arm64-v8a",
+      "artifactName": "JniBitmapOperationsLibrary",
+      "files": [
+        {
+          "src": "I:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\JniBitmapOperationsLibrary.cpp",
+          "flags": "-gcc-toolchain C:/Users/luong/AppData/Local/Android/Sdk/ndk-bundle/build//../toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 -target aarch64-none-linux-android -ffunction-sections -funwind-tables -fstack-protector-strong -fpic -Wno-invalid-command-line-argument -Wno-unused-command-line-argument -no-canonical-prefixes -g -fno-exceptions -fno-rtti -O0 -UNDEBUG -fno-limit-debug-info -IC:/Users/luong/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/system/include -II:/OT/CameraView-master/JniBitmapOperationsLibrary/jni -DANDROID -D__ANDROID_API__\u003d21 -Wa,--noexecstack -Wformat -Werror\u003dformat-security --sysroot C:/Users/luong/AppData/Local/Android/Sdk/ndk-bundle/build//../sysroot -isystem C:/Users/luong/AppData/Local/Android/Sdk/ndk-bundle/build//../sysroot/usr/include/aarch64-linux-android"
+        }
+      ],
+      "output": "I:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\build\\intermediates\\ndkBuild\\debug\\obj\\local\\arm64-v8a\\libJniBitmapOperationsLibrary.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-arm64-v8a": {
+      "cppCompilerExecutable": "C:\\Users\\luong\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\build\\..\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

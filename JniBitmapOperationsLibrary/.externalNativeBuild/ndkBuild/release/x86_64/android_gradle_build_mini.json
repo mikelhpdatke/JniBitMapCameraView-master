@@ -1,0 +1,17 @@
+{
+  "buildFiles": [
+    "I:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\Android.mk",
+    "I:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\luong\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dI:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\Android.mk NDK_APPLICATION_MK\u003dI:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dI:/OT/CameraView-master/JniBitmapOperationsLibrary/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dI:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\build\\intermediates\\ndkBuild\\release\\lib clean"
+  ],
+  "libraries": {
+    "JniBitmapOperationsLibrary-release-x86_64": {
+      "artifactName": "JniBitmapOperationsLibrary",
+      "buildCommand": "C:\\Users\\luong\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dI:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\Android.mk NDK_APPLICATION_MK\u003dI:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dI:/OT/CameraView-master/JniBitmapOperationsLibrary/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003dI:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\build\\intermediates\\ndkBuild\\release\\lib I:/OT/CameraView-master/JniBitmapOperationsLibrary/build/intermediates/ndkBuild/release/obj/local/x86_64/libJniBitmapOperationsLibrary.so",
+      "abi": "x86_64",
+      "output": "I:\\OT\\CameraView-master\\JniBitmapOperationsLibrary\\build\\intermediates\\ndkBuild\\release\\obj\\local\\x86_64\\libJniBitmapOperationsLibrary.so"
+    }
+  }
+}
