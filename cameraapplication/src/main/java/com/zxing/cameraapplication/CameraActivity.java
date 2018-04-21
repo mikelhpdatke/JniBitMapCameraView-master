@@ -20,9 +20,11 @@ import com.cjt2325.cameralibrary.util.DeviceUtil;
 import com.cjt2325.cameralibrary.util.FileUtil;
 
 import java.io.File;
+import java.nio.ByteBuffer;
 
 public class CameraActivity extends AppCompatActivity {
     private JCameraView jCameraView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +59,28 @@ public class CameraActivity extends AppCompatActivity {
             public void captureSuccess(Bitmap bitmap) {
                 //获取图片bitmap
 //                Log.i("JCameraView", "bitmap = " + bitmap.getWidth());
-                String path = FileUtil.saveBitmap("JCamera", bitmap);
+                //
+                int width = bitmap.getWidth();
+                int height = bitmap.getHeight();
+
+                int size = bitmap.getRowBytes() * bitmap.getHeight();
+                //int size = bitmap.
+                ByteBuffer byteBuffer = ByteBuffer.allocate(size);
+                bitmap.copyPixelsToBuffer(byteBuffer);
+                byte[] byteArray = byteBuffer.array();
+                //////////
+
+                MainActivity.argbToabgr(byteArray, bitmap.getRowBytes(), height);
+
+
+                //////////
+                Bitmap.Config configBmp = Bitmap.Config.valueOf(bitmap.getConfig().name());
+                Bitmap bitmap_tmp = Bitmap.createBitmap(width, height, configBmp);
+                ByteBuffer buffer = ByteBuffer.wrap(byteArray);
+                bitmap_tmp.copyPixelsFromBuffer(buffer);
+
+                ///////////
+                String path = FileUtil.saveBitmap("JCamera", bitmap_tmp);
                 Intent intent = new Intent();
                 intent.putExtra("path", path);
                 setResult(101, intent);

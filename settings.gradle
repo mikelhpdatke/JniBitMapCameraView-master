@@ -1,1 +1,1 @@
-include ':camera', ':cameraapplication', ':JniBitmapOperationsLibrary'
+include ':camera', ':cameraapplication'

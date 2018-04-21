@@ -17,12 +17,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.cjt2325.cameralibrary.util.DeviceUtil;
-import com.jni.bitmap_operations.JniBitmapHolder;
+
 
 public class MainActivity extends AppCompatActivity {
     private final int GET_PERMISSION_REQUEST = 100; //权限申请自定义码
     private ImageView photo;
     private TextView device;
+
+    static {
+        System.loadLibrary("keys");
+    }
+
+    public static native byte[] argbToabgr(byte[] buffer, int width, int height);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,9 +75,9 @@ public class MainActivity extends AppCompatActivity {
         if (resultCode == 101) {
             Log.i("CJT", "picture");
             String path = data.getStringExtra("path");
-            JniBitmapHolder bitmapHolder = new JniBitmapHolder(BitmapFactory.decodeFile(path));
-            bitmapHolder.flipBitmapHorizontal();
-            photo.setImageBitmap(bitmapHolder.getBitmapAndFree());
+            //JniBitmapHolder bitmapHolder = new JniBitmapHolder(BitmapFactory.decodeFile(path));
+            //bitmapHolder.flipBitmapHorizontal();
+            photo.setImageBitmap(BitmapFactory.decodeFile(path));
         }
         if (resultCode == 102) {
             Log.i("CJT", "video");

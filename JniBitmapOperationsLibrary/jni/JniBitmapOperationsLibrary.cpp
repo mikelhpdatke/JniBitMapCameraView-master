@@ -81,6 +81,13 @@ void convertIntToArgb(uint32_t pixel, ARGB* argb)
     argb->alpha = (pixel & 0xff);
     }
 
+void convertArgbToArgb(uint32_t pixel, ARGB* argb)
+{
+	argb->red = ((pixel >> 24) & 0xff);
+	argb->green = ((pixel >> 16) & 0xff);
+	argb->blue = ((pixel >> 8) & 0xff);
+	argb->alpha = (pixel & 0xff);
+}
 /**crops the bitmap within to be smaller. note that no validations are done*/ //
 JNIEXPORT void JNICALL Java_com_jni_bitmap_1operations_JniBitmapHolder_jniCropBitmap(
 	JNIEnv * env, jobject obj, jobject handle, uint32_t left, uint32_t top,

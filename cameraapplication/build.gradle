@@ -20,6 +20,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
 }
 
 repositories {
@@ -38,9 +43,7 @@ dependencies {
     compile 'com.android.support:support-fragment:27.1.1'
     testCompile 'junit:junit:4.12'
     compile project(':camera')
-
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
-    compile project(path: ':JniBitmapOperationsLibrary')
 }
